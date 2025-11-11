@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E67E22"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registrar Alimento"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/volver"
+            android:backgroundTint="#E74C3C"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- PARTE MAESTRO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos del Usuario"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario: Juan Pérez"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- PARTE DETALLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Alimento"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ID Alimento -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/etIdAlimento"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="ID Alimento"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnBuscarAlimento"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="🔍"
+                    android:textSize="16sp"
+                    android:backgroundTint="#E67E22"/>
+            </LinearLayout>
+
+            <!-- Nombre del Alimento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvNombreAlimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="14sp"
+                android:textColor="#27AE60"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Tipo de Comida -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo:"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTipoComida"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/tipos_comida"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Cantidad -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad (g):"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/etCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Gramos"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Calorías -->
+            <TextView
+                android:id="@+id/tvCaloriasConsumidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 cal"
+                android:textSize="20sp"
+                android:textColor="#E74C3C"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btnAgregarLista"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Agregar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#27AE60"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btnEditarLista"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Editar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#F39C12"
+                    android:enabled="false"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <Button
+                    android:id="@+id/btnEliminarLista"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Eliminar"
+                    android:textSize="12sp"
+                    android:backgroundTint="#E74C3C"
+                    android:enabled="false"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- ListView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista de Alimentos"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <ListView
+                android:id="@+id/lvAlimentos"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:divider="#E0E0E0"
+                android:dividerHeight="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/btnGuardarTodo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/guardar_todo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E67E22"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

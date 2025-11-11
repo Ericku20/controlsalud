@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Control de Salud</string>
+
+    <!-- Login -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login_button">Entrar</string>
+    <string name="register_link">¿No tienes cuenta? Regístrate</string>
+    <string name="register_title">Registro</string>
+    <string name="name">Nombre Completo</string>
+    <string name="register_button">Registrarse</string>
+    <string name="login_link">¿Ya tienes cuenta? Inicia sesión</string>
+
+    <!-- Menú Principal -->
+    <string name="menu_title">Menú Principal</string>
+    <string name="menu_ejercicios">Catálogo Ejercicios</string>
+    <string name="menu_alimentos">Catálogo Alimentos</string>
+    <string name="menu_registrar_ejercicio">Registrar Mi Ejercicio</string>
+    <string name="menu_registrar_alimento">Registrar Mi Alimento</string>
+    <string name="menu_resumen">Ver Resumen</string>
+    <string name="menu_perfil">Mi Perfil</string>
+    <string name="menu_salir">Salir</string>
+
+    <!-- CRUD Ejercicios -->
+    <string name="ejercicios_title">Ejercicios</string>
+    <string name="ejercicio_id">ID</string>
+    <string name="ejercicio_nombre">Nombre del Ejercicio</string>
+    <string name="ejercicio_descripcion">Descripción</string>
+    <string name="ejercicio_calorias">Calorías por Minuto</string>
+    <string name="ejercicio_categoria">Categoría</string>
+
+    <!-- CRUD Alimentos -->
+    <string name="alimentos_title">Alimentos</string>
+    <string name="alimento_id">ID</string>
+    <string name="alimento_nombre">Nombre del Alimento</string>
+    <string name="alimento_descripcion">Descripción</string>
+    <string name="alimento_calorias">Calorías por 100g</string>
+    <string name="alimento_categoria">Categoría</string>
+
+    <!-- Maestro-Detalle -->
+    <string name="registrar_ejercicio_title">Registrar Mi Ejercicio</string>
+    <string name="id_ejercicio">ID Ejercicio</string>
+    <string name="repeticiones">Repeticiones</string>
+    <string name="duracion">Duración (minutos)</string>
+    <string name="agregar_lista">Agregar a Lista</string>
+    <string name="guardar_todo">Guardar Todo</string>
+    <string name="calorias_quemadas">Calorías Quemadas</string>
+
+    <!-- Botones -->
+    <string name="agregar">Agregar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="buscar">Buscar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="volver">Volver</string>
+
+    <!-- Mensajes -->
+    <string name="error_campos_vacios">Por favor complete todos los campos</string>
+    <string name="error_login">Email o contraseña incorrectos</string>
+    <string name="registro_exitoso">Registro exitoso</string>
+    <string name="operacion_exitosa">Operación realizada exitosamente</string>
+    <string name="error_operacion">Error al realizar la operación</string>
+    <string name="confirmar_eliminar">¿Está seguro de eliminar este registro?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="seleccione_registro">Seleccione un registro de la lista</string>
+    <string name="buscar_hint">Buscar...</string>
+
+    <!-- Array para Tipos de Comida -->
+    <string-array name="tipos_comida">
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Cena</item>
+        <item>Merienda</item>
+    </string-array>
+</resources>
